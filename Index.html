@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halaman HTML Sederhana</title>
+</head>
+<body>
+  <h1>Halo, Dunia!</h1>
+  <p>Ini paragraf pertama di halaman HTML sederhana.</p>
+
+  <!-- Link -->
+  <a href="https://example.com" target="_blank">Kunjungi Example</a>
+
+  <!-- Gambar -->
+  <p>
+    <img src="https://via.placeholder.com/200" alt="Contoh gambar" />
+  </p>
+
+  <!-- Daftar -->
+  <h2>Daftar Belanja</h2>
+  <ul>
+    <li>Roti</li>
+    <li>Susu</li>
+    <li>Telur</li>
+  </ul>
+
+  <!-- Tombol dengan aksi sederhana -->
+  <button onclick="alert('Tombol diklik!')">Klik Aku</button>
+
+  <!-- Form sederhana -->
+  <h2>Form Nama</h2>
+  <form onsubmit="event.preventDefault(); 
+                  const nama = document.getElementById('nama').value; 
+                  document.getElementById('hasil').textContent = 'Halo, ' + nama + '!';">
+    <input id="nama" type="text" placeholder="Masukkan nama kamu" />
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="hasil"></p>
+</body>
+</html>
